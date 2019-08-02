@@ -22,5 +22,28 @@
     </swiper>
   </view>
   <!-- 视频列表 -->
-  <view class="video_wrap"></view>
+  <view class="video_wrap">
+    <navigator class="video_item" wx:for="{{videosList}}" wx:key="{{index}}" url="../detail/detail?id={{item.id}}">
+      <!-- 图片容器 -->
+      <view class="video_img">
+        <!-- 图片 -->
+        <image src="{{item.imgSrc}}" mode="widthFix"></image>
+        <!-- 播放量等信息 -->
+        <view class="video_info">
+          <!-- 播放量 -->
+          <view class="play_count_wrap">
+            <text class="fa fa-play-circle-o"></text>
+            <text class="play_count">{{item.playCount}}</text>
+          </view>
+          <!-- 评论数 -->
+          <view class="comment_count_wrap">
+            <text class="fa fa-commenting"></text>
+            <text class="comment_count">{{item.commentCount}}</text>
+          </view>
+        </view>
+      </view> 
+      <!-- 标题 -->
+      <view class="video_title">{{item.desc}}</view>
+    </navigator>
+  </view>
 </view>

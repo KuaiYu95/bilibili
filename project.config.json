@@ -6,6 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
@@ -21,7 +22,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.7",
+	"libVersion": "2.8.0",
 	"appid": "wx60d893092e14e31a",
 	"projectname": "%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9",
 	"debugOptions": {
