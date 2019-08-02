@@ -49,7 +49,7 @@ Page({
    * 获取评论列表
    * @param {*} options 
    */
-   getCommentsList(videoId) {
+  getCommentsList(videoId) {
     let _this = this
     wx.request({
       url: 'https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/commentsList?id=' + videoId,
@@ -61,7 +61,7 @@ Page({
         }
       }
     })
-   },
+  },
 
   /**
    * 生命周期函数--监听页面加载
